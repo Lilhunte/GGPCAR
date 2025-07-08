@@ -4,7 +4,7 @@ body {
   background-color: #111827;
 }
 .header-bg {
-  background-image: url("./media/header-image.JPG");
+  background-image: url("./header-image.JPG");
   background-size: cover;
   background-position: center;
   height: 700px; /* Adjust as needed */
