@@ -4,7 +4,6 @@ body {
   background-color: #111827;
 }
 .header-bg {
-  background-image: url("./header-image.JPG");
   background-size: cover;
   background-position: center;
   height: 700px; /* Adjust as needed */
@@ -28,13 +27,14 @@ body {
   display: flex;
   gap: 2rem;
   margin: 20px;
-  padding: 1rem 0 0 0;
+  padding: 1rem 2rem 0 0;
   justify-content: flex-end;
   position: fixed;
   top: 0;
   right: 30%;
   left: 0;
   z-index: 1000;
+  transition: background 0.3s, box-shadow 0.3s;
 }
 .navbar a {
   background-color: aliceblue;
@@ -161,4 +161,51 @@ video {
   width: 700px;
   height: auto;
   border-radius: 16px;
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 64px;
+    z-index: 50;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    border-radius: 0 0 1rem 1rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+    margin-top: 0.5rem;
+  }
+  .navbar ul li a {
+    color: #1e293b;
+    padding: 1rem 0;
+    display: block;
+    border-bottom: 1px solid #2226;
+  }
+}
+
+@keyframes fade-in-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-in-down {
+  animation: fade-in-down 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+@keyframes spin-slow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.animate-spin-slow {
+  animation: spin-slow 6s linear infinite;
 }
