@@ -3,60 +3,159 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Produtos | GPcar</title>
+    <title>Produtos | GGPCAR</title>
     <link rel="stylesheet" href="./style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-gray-100 text-gray-900">
-    <header class="header-bg">
-      <nav class="navbar">
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li>
-            <a href="product.html" class="text-blue-600 font-bold">Produtos</a>
-          </li>
-          <li><a href="about.html">Sobre</a></li>
-          <li><a href="contact.html">Contato</a></li>
-        </ul>
+    <!-- Header Moderno com Banner e Navbar Centralizada -->
+    <header class="header-bg relative overflow-hidden">
+      <nav
+        class="navbar fixed top-0 left-0 w-full z-20 bg-white backdrop-blur-md shadow"
+      >
+        <div
+          class="max-w-7xl mx-auto flex items-center justify-center px-4 py-3"
+        >
+          <ul
+            class="flex-col md:flex-row md:flex hidden md:!flex bg-white md:bg-transparent md:static absolute w-full left-0 top-16 md:top-0 z-50 shadow md:shadow-none rounded-b-xl md:rounded-none justify-center items-center md:relative md:mx-auto"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="block px-6 py-3 md:p-0 text-gray-900 hover:text-blue-400 transition font-semibold"
+                >Início</a
+              >
+            </li>
+            <li>
+              <a
+                href="product.html"
+                class="block px-6 py-3 md:p-0 text-blue-600 font-bold"
+                >Viaturas</a
+              >
+            </li>
+            <li>
+              <a
+                href="about.html"
+                class="block px-6 py-3 md:p-0 text-gray-900 hover:text-blue-400 transition font-semibold"
+                >Sobre</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="block px-6 py-3 md:p-0 text-gray-900 hover:text-blue-400 transition font-semibold"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </div>
       </nav>
-      <h1 class="header-title">GGP<span class="header-title-2">CAR</span></h1>
+      <!-- Banner grande no header com blur -->
+      <div
+        class="relative w-full h-[320px] md:h-[420px] lg:h-[520px] flex items-center justify-center mt-16"
+      >
+        <img
+          src="./media/header-image.JPG"
+          alt="Banner GGPCAR"
+          class="absolute inset-0 w-full h-full object-cover blur-md"
+          style="z-index: 1"
+        />
+        <!-- Nome da marca sobreposto -->
+        <div class="relative z-10 flex flex-col items-center w-full">
+          <div class="flex items-center gap-4 mt-10 md:mt-20">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/BMW.svg/1200px-BMW.svg.png"
+              alt="Logo"
+              class="h-16 w-16 rounded-full shadow-lg animate-spin-slow bg-white p-1"
+            />
+            <span
+              class="text-5xl md:text-7xl font-extrabold text-white drop-shadow-lg animate-fade-in-down"
+            >
+              GGPC<span
+                class="header-title-2 ml-1 animate-pulse text-orange-400"
+                >AR</span
+              >
+            </span>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main class="max-w-7xl mx-auto px-4 py-16">
+      <!-- Secção de Marcas Automóveis Premium -->
+      <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-3xl font-bold text-gray-400 text-center mb-12">
+            Marcas Automóveis Premium
+          </h2>
+          <div class="relative">
+            <div
+              class="flex overflow-x-auto pb-4 hide-scrollbar space-x-6 px-4 justify-center"
+            >
+              <div
+                class="flex-shrink-0 w-48 h-32 bg-white rounded-2xl shadow-lg flex items-center justify-center"
+              >
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/BMW.svg/1200px-BMW.svg.png"
+                  alt="BMW"
+                  class="h-16"
+                />
+              </div>
+              <div
+                class="flex-shrink-0 w-48 h-32 bg-white rounded-2xl shadow-lg flex items-center justify-center"
+              >
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Mercedes-Logo.svg/2048px-Mercedes-Logo.svg.png"
+                  alt="Mercedes-Benz"
+                  class="h-16"
+                />
+              </div>
+          
+              <div
+                class="flex-shrink-0 w-48 h-32 bg-white rounded-2xl shadow-lg flex items-center justify-center"
+              >
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Audi-Logo_2016.svg/1200px-Audi-Logo_2016.svg.png"
+                  alt="Audi"
+                  class="h-16"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Secção de Produtos/Viaturas -->
       <section class="mb-12">
-        <h2 class="text-3xl font-bold text-blue-700 mb-4">
-          Explore Nossa Coleção Premium
+        <h2 class="text-3xl font-bold text-blue-700 mb-4 text-center">
+          Explore a Nossa Colecção Premium
         </h2>
-        <p class="text-lg text-gray-700 mb-8">
-          Descubra uma seleção exclusiva de veículos de luxo, performance e
-          elétricos. Cada carro é rigorosamente inspecionado e pronto para você
-          reservar.
+        <p class="text-lg text-gray-700 mb-8 text-center">
+          Descubra uma selecção exclusiva de viaturas de luxo, performance e
+          eléctricas. Cada carro é rigorosamente inspeccionado e pronto para si.
         </p>
         <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          <!-- Carros (exemplo, mantenha os detalhes dos carros conforme necessário) -->
+          <!-- Exemplo de viatura -->
           <div
             class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col"
           >
             <img
-              src="./Benz-1.JPG"
-              alt="2022 Tesla Model S"
+              src="./media/Benz-1.JPG"
+              alt="2022 Mercedes-Benz C-Class"
               class="w-full h-56 object-cover"
             />
-            <div class="p-6 flex-1 flex flex-col">
-              <h3 class="text-xl font-bold text-blue-700 mb-2">
-                2022 Tesla Model S
-              </h3>
-              <p class="text-lg font-semibold text-red-500 mb-2">€ 15.900</p>
-              <ul class="text-gray-700 mb-4 space-y-1 text-sm">
-                <li>Elétrico, AWD</li>
-                <li>Autonomia: 652 km</li>
-                <li>0-100 km/h: 2,1s</li>
-                <li>Autopilot Incluso</li>
+            <div class="product-info">
+              <h3>Mercedes E 250 CDI Avantgarde BlueEfficiency 2011/07</h3>
+              <p class="product-price">Preço: Consultar</p>
+              <ul class="product-details">
+                <li>sempre assistido na marca</li>
+                <li>129.000km</li>
+                <li>Iuc já esta pago</li>
               </ul>
               <a
-                href="contact.html"
+                href="contact.html#contact-form"
                 class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition"
-                >Reservar Agora</a
+                >Saiba mais</a
               >
             </div>
           </div>
@@ -64,25 +163,22 @@
             class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col"
           >
             <img
-              src="./BMW.JPG"
+              src="./media/BMW.JPG"
               alt="2022 BMW M3 Competition"
               class="w-full h-56 object-cover"
             />
-            <div class="p-6 flex-1 flex flex-col">
-              <h3 class="text-xl font-bold text-blue-700 mb-2">
-                2022 BMW M3 Competition
-              </h3>
-              <p class="text-lg font-semibold text-red-500 mb-2">€ 15.900</p>
-              <ul class="text-gray-700 mb-4 space-y-1 text-sm">
-                <li>Gasolina, RWD</li>
-                <li>510 CV Twin Turbo</li>
-                <li>0-100 km/h: 3,9s</li>
-                <li>Som Premium</li>
+            <div class="product-info">
+              <h3>2015 BMW 420d Serie Coup</h3>
+              <p class="product-price">Preço: Consultar</p>
+              <ul class="product-details">
+                <li>Glaciersilver metalic</li>
+
+                <li>75.000 km</li>
               </ul>
               <a
-                href="contact.html"
+                href="contact.html#contact-form"
                 class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition"
-                >Reservar Agora</a
+                >Saiba mais</a
               >
             </div>
           </div>
@@ -90,7 +186,7 @@
             class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col"
           >
             <img
-              src="./Ford.JPG"
+              src="./media/Ford.JPG"
               alt="2022 Ford Mustang Mach-E"
               class="w-full h-56 object-cover"
             />
@@ -98,17 +194,16 @@
               <h3 class="text-xl font-bold text-blue-700 mb-2">
                 2022 Ford Mustang Mach-E
               </h3>
-              <p class="text-lg font-semibold text-red-500 mb-2">€ 15.900</p>
-              <ul class="text-gray-700 mb-4 space-y-1 text-sm">
-                <li>Elétrico, AWD</li>
+<p class="product-price">Preço: Consultar</p>              <ul class="text-gray-700 mb-4 space-y-1 text-sm">
+                <li>Eléctrico, AWD</li>
                 <li>Autonomia: 540 km</li>
                 <li>0-100 km/h: 3,7s</li>
                 <li>Painel Digital</li>
               </ul>
               <a
-                href="contact.html"
+                href="contact.html#contact-form"
                 class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition"
-                >Reservar Agora</a
+                >Saiba mais</a
               >
             </div>
           </div>
@@ -116,7 +211,7 @@
             class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col"
           >
             <img
-              src="./OPel.JPG"
+              src="./media/OPel.JPG"
               alt="2022 Opel Mokka-e"
               class="w-full h-56 object-cover"
             />
@@ -124,17 +219,16 @@
               <h3 class="text-xl font-bold text-blue-700 mb-2">
                 2022 Opel Mokka-e
               </h3>
-              <p class="text-lg font-semibold text-red-500 mb-2">€ 15.900</p>
-              <ul class="text-gray-700 mb-4 space-y-1 text-sm">
+<p class="product-price">Preço: Consultar</p>              <ul class="text-gray-700 mb-4 space-y-1 text-sm">
                 <li>Elétrico, FWD</li>
                 <li>Autonomia: 324 km</li>
                 <li>0-100 km/h: 8,7s</li>
                 <li>Design Moderno</li>
               </ul>
               <a
-                href="contact.html"
+                href="contact.html#contact-form"
                 class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition"
-                >Reservar Agora</a
+                >Saiba mais</a
               >
             </div>
           </div>
@@ -142,7 +236,7 @@
             class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col"
           >
             <img
-              src="./Peoget.JPG"
+              src="./media/Peoget.JPG"
               alt="2022 Peugeot e-208"
               class="w-full h-56 object-cover"
             />
@@ -150,17 +244,16 @@
               <h3 class="text-xl font-bold text-blue-700 mb-2">
                 2022 Peugeot e-208
               </h3>
-              <p class="text-lg font-semibold text-red-500 mb-2">€ 15.900</p>
-              <ul class="text-gray-700 mb-4 space-y-1 text-sm">
+<p class="product-price">Preço: Consultar</p>              <ul class="text-gray-700 mb-4 space-y-1 text-sm">
                 <li>Elétrico, FWD</li>
                 <li>Autonomia: 340 km</li>
                 <li>0-100 km/h: 8,1s</li>
                 <li>i-Cockpit 3D</li>
               </ul>
               <a
-                href="contact.html"
+                href="contact.html#contact-form"
                 class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition"
-                >Reservar Agora</a
+                >Saiba mais</a
               >
             </div>
           </div>
@@ -168,7 +261,7 @@
             class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col"
           >
             <img
-              src="./Renult.JPG"
+              src="./media/Renult.JPG"
               alt="2022 Renault Megane E-Tech"
               class="w-full h-56 object-cover"
             />
@@ -176,17 +269,16 @@
               <h3 class="text-xl font-bold text-blue-700 mb-2">
                 2022 Renault Megane E-Tech
               </h3>
-              <p class="text-lg font-semibold text-red-500 mb-2">€ 15.900</p>
-              <ul class="text-gray-700 mb-4 space-y-1 text-sm">
+<p class="product-price">Preço: Consultar</p>              <ul class="text-gray-700 mb-4 space-y-1 text-sm">
                 <li>Elétrico, FWD</li>
                 <li>Autonomia: 450 km</li>
                 <li>0-100 km/h: 7,4s</li>
                 <li>Google Integrado</li>
               </ul>
               <a
-                href="contact.html"
+                href="contact.html#contact-form"
                 class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition"
-                >Reservar Agora</a
+                >Saiba mais</a
               >
             </div>
           </div>
@@ -194,7 +286,7 @@
             class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col"
           >
             <img
-              src="./Volvo.JPG"
+              src="./media/Volvo.JPG"
               alt="2022 Volvo XC40 Recharge"
               class="w-full h-56 object-cover"
             />
@@ -202,17 +294,16 @@
               <h3 class="text-xl font-bold text-blue-700 mb-2">
                 2022 Volvo XC40 Recharge
               </h3>
-              <p class="text-lg font-semibold text-red-500 mb-2">€ 15.900</p>
-              <ul class="text-gray-700 mb-4 space-y-1 text-sm">
+<p class="product-price">Preço: Consultar</p>              <ul class="text-gray-700 mb-4 space-y-1 text-sm">
                 <li>Elétrico, AWD</li>
                 <li>Autonomia: 418 km</li>
                 <li>0-100 km/h: 4,9s</li>
                 <li>Assistente Google</li>
               </ul>
               <a
-                href="contact.html"
+                href="contact.html#contact-form"
                 class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition"
-                >Reservar Agora</a
+                >Saiba mais</a
               >
             </div>
           </div>
@@ -220,7 +311,7 @@
             class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col"
           >
             <img
-              src="./VW-1.JPG"
+              src="./media/VW-1.JPG"
               alt="2021 Volkswagen ID.4"
               class="w-full h-56 object-cover"
             />
@@ -228,36 +319,106 @@
               <h3 class="text-xl font-bold text-blue-700 mb-2">
                 2021 Volkswagen ID.4
               </h3>
-              <p class="text-lg font-semibold text-red-500 mb-2">€ 13.200</p>
-              <ul class="text-gray-700 mb-4 space-y-1 text-sm">
+<p class="product-price">Preço: Consultar</p>              <ul class="text-gray-700 mb-4 space-y-1 text-sm">
                 <li>Elétrico, RWD</li>
                 <li>Autonomia: 522 km</li>
                 <li>0-100 km/h: 8,5s</li>
                 <li>Som Premium</li>
               </ul>
               <a
-                href="contact.html"
+                href="contact.html#contact-form"
                 class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition"
-                >Reservar Agora</a
+                >Saiba mais</a
+              
               >
             </div>
           </div>
         </div>
       </section>
+
+      <!-- Secção de Vantagens GGPCAR -->
+      <section class="py-16 bg-gray-50 rounded-2xl shadow-lg">
+        <div class="max-w-4xl mx-auto px-4">
+          <div class="grid md:grid-cols-2 gap-8 mt-8">
+            <div class="bg-white rounded-xl shadow p-6">
+              <h3 class="text-2xl font-bold text-blue-700 mb-4">
+                Vantagens das Nossas Viaturas
+              </h3>
+              <ul class="list-disc list-inside text-gray-700 space-y-2">
+                <li>Viaturas rigorosamente inspeccionadas e certificadas</li>
+                <li>Histórico de manutenção completo e transparente</li>
+                <li>Garantia incluída em todas as viaturas</li>
+                <li>Opções de financiamento flexíveis e acessíveis</li>
+                <li>Entrega imediata e documentação tratada por nós</li>
+                <li>Assistência pós-venda dedicada</li>
+              </ul>
+            </div>
+            <div class="bg-white rounded-xl shadow p-6">
+              <h3 class="text-2xl font-bold text-blue-700 mb-4">
+                Vantagens da GGPCAR
+              </h3>
+              <ul class="list-disc list-inside text-gray-700 space-y-2">
+                <li>Concessionário de referência em Portugal</li>
+                <li>Equipa experiente e atendimento personalizado</li>
+                <li>Parcerias com as melhores marcas premium</li>
+                <li>Processo de compra simples, rápido e seguro</li>
+                <li>Mais de 500 clientes satisfeitos</li>
+                <li>Test-drive disponível sem compromisso</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Secção de Vantagens de Comprar Carros Usados e Semi-Novos -->
+      <section class="py-16 bg-gray-50 rounded-2xl shadow-lg">
+        <div class="max-w-4xl mx-auto px-4">
+          <div class="text-center mb-10">
+            <h2 class="text-3xl font-bold text-blue-700 mb-4">
+              Vantagens de Comprar Carros Usados e Semi-Novos
+            </h2>
+            <p class="text-gray-500">
+              Descubra porque optar por um carro usado ou semi-novo pode ser uma
+              excelente escolha.
+            </p>
+          </div>
+          <ul class="list-disc list-inside text-gray-700 space-y-3 text-lg">
+            <li>Preço mais acessível em comparação com viaturas novas.</li>
+            <li>Desvalorização mais lenta após a compra.</li>
+            <li>Maior variedade de modelos e versões disponíveis.</li>
+            <li>
+              Possibilidade de adquirir veículos com mais extras pelo mesmo
+              valor.
+            </li>
+            <li>
+              Histórico de manutenção disponível e transparência no estado do
+              veículo.
+            </li>
+            <li>Processo de compra mais rápido e flexível.</li>
+            <li>Impostos e seguros geralmente mais baixos.</li>
+            <li>
+              Opção sustentável, contribuindo para a reutilização de recursos.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </section>
     </main>
 
     <footer class="bg-gray-900 text-gray-200 py-10 mt-10">
       <div
         class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-8"
       >
+        <!-- Logo & Brand -->
         <div class="flex flex-col items-center md:items-start">
           <span class="text-3xl font-bold text-blue-500"
-            >GP<span class="text-orange-500">CAR</span></span
+            >GGP<span class="text-orange-500">CAR</span></span
           >
           <p class="mt-2 text-sm text-gray-400">
-            Sua concessionária premium de confiança.
+            A sua concessionária premium de confiança.
           </p>
         </div>
+        <!-- Navigation Links -->
         <div>
           <ul
             class="flex flex-col md:flex-row gap-4 md:gap-8 text-lg font-semibold"
@@ -269,7 +430,7 @@
             </li>
             <li>
               <a href="product.html" class="hover:text-blue-400 transition"
-                >Produtos</a
+                >Viaturas</a
               >
             </li>
             <li>
@@ -279,23 +440,24 @@
             </li>
             <li>
               <a href="contact.html" class="hover:text-blue-400 transition"
-                >Contato</a
+                >Contacto</a
               >
             </li>
           </ul>
         </div>
+        <!-- Contact Info -->
         <div class="text-center md:text-right">
-          <p class="font-semibold">Fale Conosco</p>
+          <p class="font-semibold">Contacte-nos</p>
           <p>
             Email:
             <a
-              href="mailto:calistoanselmonhancasse296@gmail.com"
+              href="mailto:canoutlethelp@gmail.com"
               class="text-blue-400 hover:underline"
-              >calistoanselmonhancasse296@gmail.com</a
+              >canoutlethelp@gmail.com</a
             >
           </p>
           <p>
-            Telefone:
+            Telemóvel:
             <a href="tel:+351916656266" class="text-blue-400 hover:underline"
               >+351 916 656 266</a
             >
@@ -337,8 +499,178 @@
       <div
         class="border-t border-gray-700 mt-8 pt-4 text-center text-gray-500 text-sm"
       >
-        &copy; 2025 GPcar. All rights reserved.
+        &copy; 2025 GGPCAR. Todos os direitos reservados.
       </div>
     </footer>
+
+    <!-- Chatbot Widget (igual ao da home) -->
+    <div id="chatbot-widget" class="fixed bottom-6 right-6 z-50">
+      <button
+        id="chatbot-toggle"
+        class="bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-lg w-14 h-14 flex items-center justify-center focus:outline-none transition"
+      >
+        <svg
+          class="w-7 h-7"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+          viewBox="0 0 24 24"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 20h9" />
+          <circle
+            cx="12"
+            cy="10"
+            r="7"
+            stroke="currentColor"
+            stroke-width="2"
+            fill="none"
+          />
+          <circle cx="9" cy="9" r="1" fill="currentColor" />
+          <circle cx="15" cy="9" r="1" fill="currentColor" />
+          <path
+            d="M9 13c.5.5 1.5 1 3 1s2.5-.5 3-1"
+            stroke="currentColor"
+            stroke-width="1.5"
+            fill="none"
+          />
+        </svg>
+      </button>
+      <div
+        id="chatbot-box"
+        class="hidden bg-white rounded-xl shadow-2xl w-80 max-w-xs flex flex-col overflow-hidden animate-fade-in-up"
+      >
+        <div
+          class="bg-blue-600 text-white px-4 py-3 flex items-center justify-between"
+        >
+          <span class="font-bold">GGPCAR Chat</span>
+          <button
+            id="chatbot-close"
+            class="text-white hover:text-orange-400 focus:outline-none"
+          >
+            &times;
+          </button>
+        </div>
+        <div
+          id="chatbot-messages"
+          class="flex-1 px-4 py-3 space-y-2 overflow-y-auto text-sm"
+          style="max-height: 300px"
+        >
+          <div
+            class="bg-gray-100 rounded-lg px-3 py-2 text-gray-700 self-start w-fit"
+          >
+            Olá! 👋<br />Como posso ajudar?
+          </div>
+        </div>
+        <form id="chatbot-form" class="flex border-t border-gray-200">
+          <input
+            id="chatbot-input"
+            type="text"
+            autocomplete="off"
+            placeholder="Escreva a sua mensagem..."
+            class="flex-1 px-3 py-2 focus:outline-none"
+          />
+          <button
+            type="submit"
+            class="px-4 text-blue-600 font-bold hover:text-orange-400 transition"
+          >
+            Enviar
+          </button>
+        </form>
+      </div>
+    </div>
+    <style>
+      .animate-fade-in-up {
+        animation: fadeInUp 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      #chatbot-messages::-webkit-scrollbar {
+        width: 6px;
+        background: transparent;
+      }
+      #chatbot-messages::-webkit-scrollbar-thumb {
+        background: #e5e7eb;
+        border-radius: 3px;
+      }
+    </style>
+    <script>
+      // Chatbot logic igual ao da home
+      const chatbotToggle = document.getElementById("chatbot-toggle");
+      const chatbotBox = document.getElementById("chatbot-box");
+      const chatbotClose = document.getElementById("chatbot-close");
+      const chatbotForm = document.getElementById("chatbot-form");
+      const chatbotInput = document.getElementById("chatbot-input");
+      const chatbotMessages = document.getElementById("chatbot-messages");
+
+      chatbotToggle.addEventListener("click", () => {
+        chatbotBox.classList.toggle("hidden");
+        setTimeout(() => chatbotInput.focus(), 300);
+      });
+      chatbotClose.addEventListener("click", () => {
+        chatbotBox.classList.add("hidden");
+      });
+
+      function getBotReply(message) {
+        const msg = message.toLowerCase();
+        if (msg.includes("horário") || msg.includes("abrem")) {
+          return "Estamos abertos de segunda a sábado, das 9h às 19h.";
+        }
+        if (msg.includes("localização") || msg.includes("onde")) {
+          return "Estamos localizados em Portugal. Para mais detalhes, consulte a página de contacto.";
+        }
+        if (msg.includes("financiamento")) {
+          return "Sim, oferecemos opções de financiamento flexíveis. Quer saber mais?";
+        }
+        if (msg.includes("test") || msg.includes("drive")) {
+          return "Pode marcar um test-drive através do nosso formulário de contacto ou aqui mesmo!";
+        }
+        if (msg.includes("garantia")) {
+          return "Todas as nossas viaturas incluem garantia. Para detalhes, pergunte pelo modelo desejado.";
+        }
+        if (
+          msg.includes("olá") ||
+          msg.includes("bom dia") ||
+          msg.includes("boa tarde")
+        ) {
+          return "Olá! Como posso ajudar?";
+        }
+        if (msg.includes("email") || msg.includes("contacto")) {
+          return "Pode contactar-nos pelo email: canoutlethelp@gmail.com ou pelo formulário no site.";
+        }
+        if (msg.includes("preço") || msg.includes("valor")) {
+          return "Para informações de preços, consulte a secção de viaturas ou pergunte pelo modelo desejado.";
+        }
+        return "Obrigado pela sua mensagem! Em breve um dos nossos consultores irá responder.";
+      }
+
+      chatbotForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+        const userMsg = chatbotInput.value.trim();
+        if (!userMsg) return;
+        const userDiv = document.createElement("div");
+        userDiv.className =
+          "bg-blue-100 rounded-lg px-3 py-2 text-blue-900 self-end w-fit ml-auto";
+        userDiv.textContent = userMsg;
+        chatbotMessages.appendChild(userDiv);
+        chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+        setTimeout(() => {
+          const botDiv = document.createElement("div");
+          botDiv.className =
+            "bg-gray-100 rounded-lg px-3 py-2 text-gray-700 self-start w-fit";
+          botDiv.textContent = getBotReply(userMsg);
+          chatbotMessages.appendChild(botDiv);
+          chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+        }, 600);
+        chatbotInput.value = "";
+      });
+    </script>
   </body>
 </html>
