@@ -163,6 +163,49 @@ video {
   border-radius: 16px;
 }
 
+.produto {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 8px;
+  cursor: pointer;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+.produto button {
+  background: #0078d4;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+.popup-content {
+  background: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+}
+.fechar {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   .navbar ul {
     flex-direction: column;
